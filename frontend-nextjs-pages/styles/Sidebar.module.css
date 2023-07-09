@@ -1,0 +1,109 @@
+.Sidebar {
+  background-color: #0e2154;
+  color: #fff;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+  width: 230px;
+  z-index: 1;
+}
+
+.sidebar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.liSidebar {
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+.dropdown {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+.dropdown:hover {
+  background-color: #a6b0e4;
+
+}
+
+/* .dropdown:active {
+  background-color: aqua;
+} */
+
+.icon {
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.expanded {
+  transform: rotate(-135deg);
+}
+
+.submenu {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+}
+
+
+.submenu li {
+  padding: 8px 16px;
+  margin-left: 20px;
+}
+
+.patients {
+  margin-top: 5px;
+}
+
+.submenu li:hover, .liSidebar:hover {
+  background-color: #a6b0e4;
+  cursor: pointer;
+}
+
+.myLink {
+  display: flex;
+  text-decoration: none;
+  margin-left: 20px;
+  color: white;
+}
+
+.mySubLink {
+  margin-left: 40px;
+  color: white;
+
+}
+
+.myIcon {
+  margin-right: 15px;
+}
+
+.mainPicture{
+  border-radius:50% ;
+  width: 100px;
+  height: 100px;
+  margin:45px 55px ;
+}
+
+.newButton {
+  background-color: rgb(50, 146, 50);
+  position: absolute;
+  right: 40px;
+  padding: 2px;
+  margin-top: -8px;
+  width: 65px;
+  border-radius: 30px;
+  cursor: pointer;
+  justify-content: center;
+}
