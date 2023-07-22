@@ -5,8 +5,8 @@ import { useState } from 'react';
 
 export default function Login() {
   const router = useRouter();
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState(111);
+  const [password, setPassword] = useState(111);
 
 
   const handleUsernameChange = (event) => {
