@@ -1,3 +1,3 @@
-const DEVELOPMENT_LINK="http://localhost:3000"
+const DEVELOPMENT_LINK="https://pms-harshan1.vercel.app/"
 
 export default DEVELOPMENT_LINK;
