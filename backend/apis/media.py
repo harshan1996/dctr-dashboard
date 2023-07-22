@@ -1,7 +1,5 @@
 from flask import Blueprint, request, Response
-from config import MODEL_PATH, AUDIO_DIR
-import os
-import json
+import os,json
 from utils.media import asr_obj
 
 media_api = Blueprint("media", __name__)
@@ -12,17 +10,12 @@ def upload():
     try:
         if request.method == "POST":
             file = request.files["file"]
-            file.save("uploads/audio/"+file.filename)
-            model = os.path.join(MODEL_PATH, "asr-model")
-            asr_obj.load_model(model)
-            hindi_speech = asr_obj.get_trans(f"{AUDIO_DIR}/{file.filename}")
-            print(hindi_speech)
-            # os.remove(audio_path)
+
+            with open("result_slice.txt", "r") as asr_results:
+                data = asr_results.read()
             response_payload = {"message": "Data found",
-                                "Transcript": hindi_speech,
+                                "Transcript": data,
                                 "response": True}
-            with open("asr_results.txt","w") as asr_results:
-                asr_results.write(hindi_speech)
             return Response(json.dumps(response_payload), mimetype="application/json", status=200)
 
     except Exception as error:
