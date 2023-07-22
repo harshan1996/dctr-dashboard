@@ -7,15 +7,6 @@ const Tabexample = () => {
     const [mainTabTwo, setMainTabTwo]=useState(false)
     const [commonData, setCommonData]=useState("")
 
- 
-    // const [ASRResult,setASRResult]=useState("")
-    // const [highlight,setHighlight]=useState("")
-    // const [introduction,setIntroduction]=useState("")
-    // const [depression,setDepression]=useState("")
-
-    // const [firstSubtabs, setFirstSubTab]=useState(false)
-    // const [secondSubtabs, setSecondSubTab]=useState(false)
-
     const handleMainTabOneClick=()=>{
         setMainTabOne(!mainTabOne)
         setMainTabTwo(false)
