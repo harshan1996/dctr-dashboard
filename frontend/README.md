@@ -1,38 +1,43 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Getting Started
 
-## Getting Started
+## Prerequisites
 
-First, run the development server:
+> An IDE like VS Code to run the backend and frontend.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+> Node to run the React application
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If you don't have the node installed in the system, install it using the Option-3 provided in the following link:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+For simplicity, these are the commands provided there which you should run (For Ubuntu):
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 
-## Learn More
+`source ~/.bashrc`
 
-To learn more about Next.js, take a look at the following resources:
+`nvm list-remote`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`nvm install v18.14.0`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Running Next.js Application
 
-## Deploy on Vercel
+Clone or download the repository.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Open the terminal and execute the following commands by `frontend` being the root directory:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Install dependencies
+
+`npm i`
+
+### Starting the application
+
+Run the following command to start the Next.js application
+
+`npm run dev`
+
+It runs the app in the development mode at the following URL:
+
+http://localhost:3000
